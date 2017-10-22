@@ -1,5 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
-    background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
-    padding:10px;
+
+}
+
+header {
+    background: rgba(1, 1, 1, 0.6);
+    color: white;
+
+}
+
+footer {
+    background: grey;
+    color: white;
+    padding:15px;
+    margin-top: 10%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.menu {
+    width:15%;
+}
+
+.content {
+    width:85%;
+}
+
+.column {
+    float: left;
+    padding:15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li a{
+    display: table;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+
+.menu li a:visited {
+    color: white;
+    text-decoration:none;
+}
+
+.menu li a:hover {
+    background-color: #0099cc;
+}
+
+.trip {
+    display: table;
+    width:80%;
+    margin-left:30px;
+    margin-bottom:30px;
+    background-color: black;
+    color: white;
+    border: 10px solid black;
+}
+
+.photo {
+    vertical-align: middle;
+    display: table-cell;
+    width:600px;
+    height:auto;
+    padding: 10px;
+}
+
+.description {
+    vertical-align: middle;
+    display: table-cell;
+    float: left;
+}
+
+.costTable, .costTable th, .costTable td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.costTable th, .costTable td {
+    padding: 5px;
+}
+.costTable th {
+    text-align: left;
 }

@@ -1,55 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:float="http://www.w3.org/1999/xhtml">
 <head>
     <title>Page Title</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
     <header>
-        <h1>Welcome to my new Website!</h1>
+        <img src="pictures/journey.jpg" style="width:15%; height:10%; float: left; margin-right:200px" alt="My face" >
+        <h1 style="padding:47px">Eurotrip 2016</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-    </nav>
+    <div class="clearfix">
+        <nav class="column menu">
+            <ul>
+                <li><a href="roadMap.html">Map</a></li>
+                <li><a href="places.html">Places</a></li>
+                <li><a href="expenditure.html">Expenditure</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <div class="content">
-        <p>
-            <img src="pictures/face.jpg" style="width:35%; height:30%" alt="My face"  >
-
-            My name is Paul. I am 24 years old. I live in Cracow. I live to eat rather than eat to live.
-        </p>
-
-        <h2>Description of the exercise</h2>
-
-        <p>
-            In this exercise you need to create your own web page. Use all what you've already learnt.
-
-            There are some requirement you should fulfil:
-
-            The page should contain at least 3 subpages.
-            Its html should be W3C valid.
-            It should contain properly used HTML5 (new) elements
-            It should contain a navigation menu
-            It should contain a contact page with a form to send email to the author (you don't need to create server side logic, only the front end)
-            Optional: It should contain a welcome screening which displays an animation
-            DO NOT use any CSS frameworks (e.g. Bootstrap)
-            Remember to use sources (images, sounds etc.) only with proper usage rights, labeled 'for reuse', and give attribution to the original author.
-            You can find many websites with free photos and graphics to commercial use, e.g. pixabay (Łącza do strony zewnętrznej.)Łącza do strony zewnętrznej.
-        </p>
-
+        <div class="column content">
+            <p>
+                My name is Paul. I am 24 years old. I live in Cracow. I live to eat rather than eat to live.
+            </p>
+        </div>
     </div>
 
-
     <footer>
-        <p>Posted by: Paweł Pudło</p>
-        <p>Everybody feel free to copy content of this page</p>
+        <p>Posted by: Paweł Pudło <br> Everybody feel free to copy content of this page</p>
     </footer>
 
 </body>
